@@ -30,9 +30,13 @@ function UserGreeting(props) {
 }
 
 // PropTypes validation: ensures the correct prop types are provided
-UserGreeting.propTypes = {
+(UserGreeting.propTypes = {
   isLoggedIn: PropTypes.bool.isRequired,
   username: PropTypes.string.isRequired,
-};
+}),
+  (UserGreeting.defaultProps = {
+    isLoggedIn: false,
+    username: "Guest",
+  });
 
 export default UserGreeting;
