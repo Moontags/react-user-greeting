@@ -1,0 +1,31 @@
+/* Yleiset asetukset */
+.welcome-message,
+.login-prompt {
+  font-size: 2em;
+  color: #f0f8ff; /* AliceBlue-väri, hieman parannettu kontrasti */
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin: 10px auto;
+  text-align: center;
+  width: fit-content;
+  max-width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Tervetuloviesti */
+.welcome-message {
+  background: linear-gradient(90deg, #28a745, #218838);
+}
+
+/* Kirjautumiskehote */
+.login-prompt {
+  background: linear-gradient(90deg, #b30000, #800000);
+}
+
+/* Hover-efekti */
+.welcome-message:hover,
+.login-prompt:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
